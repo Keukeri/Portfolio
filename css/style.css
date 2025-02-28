@@ -1,0 +1,313 @@
+
+
+.text_ap{
+    padding: 5px 0;
+    color: #fff;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+.text_ap h1{
+    font-size: 4rem;
+    line-height: 2;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.text_ap p{
+    font-size: 1.2rem;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    margin-bottom: 2rem;
+}
+
+
+.text_ap a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.25rem;
+    border: 1px solid #f6f6f6;
+    color: #f6f6f6;
+    padding: 10px 20px;
+    margin-right: 30px;
+    border-radius: 5px;
+}
+
+.text_ap a.cv{
+    color: #121212;
+    background-color: #f6f6f6;
+    font-weight: 600;
+}
+
+
+.text_ap a:hover {
+    background-color: #f6f6f6;
+    color: #121212;
+    border: 1px solid #121212;
+    transform: scale(1.2);
+    transition: color .3s, transform 0.3s ease;
+}
+
+.text_ap a.cv:hover {
+    background-color: #000000;
+    color: #f6f6f6;
+    border: 1px solid #f6f6f6;
+    transform: scale(1.2);
+    transition: color .3s, transform 0.3s ease;
+}
+
+
+
+
+#part1 {
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+#part2 {
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+.a_propos {
+    display: flex; /* Active Flexbox */
+    flex-direction: column; /* Aligne les éléments verticalement */
+    justify-content: center; /* Centre verticalement */
+    width: 80%;
+    min-height: 80vh; /* Section prend toute la hauteur de l'écran */
+    background-color: #121212a9; /* Couleur de fond */
+    border-radius: 3%; /* Coins arrondis */
+    color: #f6f6f6; /* Couleur du texte */
+    margin: 0 auto; /* Centre horizontalement la section elle-même */
+    text-align: center; /* Centre le texte */
+
+}
+.bienvenue{
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 110px 20px 0;
+    font-family: Montserrat, Helvetica, sans-serif;
+}
+
+.bienvenue p{
+    text-transform: uppercase;
+    color: #f6f6f6;
+    font-weight: 900;
+    color: transparent;
+    font-size: 0px;
+    text-align: center;
+}
+.bienvenue p span{
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    font-size: clamp(20px, 8vw, 80px);
+}
+.bienvenue p span::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform: translateX(-110%);
+}
+.bienvenue p:nth-child(1){
+    font-weight: 300;
+    animation: txt-appearance 0s 1s forwards;
+}
+.bienvenue p:nth-child(2){
+    animation: txt-appearance2 0s 1.25s forwards;
+}
+
+.bienvenue p:nth-child(1) span::after{
+    background: #f6f6f6;
+    animation: slide-in 0.75s ease-out forwards,
+     slide-out 0.75s 1s ease-out forwards;
+}
+.bienvenue p:nth-child(2) span::after{
+    background: #e6e6e6;
+    animation: slide-in 0.75s 0.3s ease-out forwards,
+    slide-out 0.75s 1.3s ease-out forwards;
+}
+
+
+ @keyframes slide-in {
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+ @keyframes slide-out {
+    100% {
+        transform: translateX(105%);
+    }
+    
+ }
+ 
+ @keyframes txt-appearance {
+    100% {
+        color: #f6f6f6;
+    }
+}
+
+@keyframes txt-appearance2 {
+    100% {
+        color: #e6e6e6;
+    }
+}
+
+
+
+
+.mes_créations {
+    display: flex;
+    width: 80%;
+    min-height: 80vh;
+    background-color: #121212a9;
+    border-radius: 3%;
+    color: #f6f6f6;
+    margin: 0 auto;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between; /* Éloigne le texte et l’image */
+}
+
+.image-container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end; /* Pousse l’image encore plus à droite */
+    align-items: center;
+    padding: 20px;
+}
+
+.image-container img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 25px;
+    margin-left: 50px; /* Ajoute un espace entre le texte et l’image */
+}
+
+
+.text_ap2 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start; /* Place tout en haut */
+    padding: 20px;
+    margin-top: -10%; /* Monte tout le texte */
+}
+
+.text_ap2 h1 {
+    font-size: 4rem;
+    margin-bottom: 30px;
+    align-self: flex-start;
+}
+
+.text_ap2 p {
+    font-size: 1.35rem;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 2rem;
+    color: #f6f6f6;
+}
+
+.btn:hover {
+    transform: scale(1.2);
+    transition: color .3s, transform 0.3s ease;
+}
+.quisuije{
+    text-align: center;
+    margin-top: 10px;
+    padding: 80px;
+}
+
+.formulaire{
+    width: 70%;
+    height: 80vh; 
+    background-color: #121212a9; /* Couleur de fond */
+    border-radius: 3%; /* Coins arrondis */
+    color: #f6f6f6; /* Couleur du texte */
+    margin: 0 auto; /* Centre horizontalement la section elle-même */
+}
+
+.text_contact{
+    padding: 5px 0;
+    color: #fff;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+.text_contact h1{
+    font-size: 3rem;
+    line-height: 2;
+    text-align: center;
+}
+.ok {
+    width: 80%;
+    margin: auto;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    margin-bottom: 2rem;
+    padding: 20px;
+}
+/* Appliquer à tous les champs de saisie */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    min-width: 300px; /* Pour éviter qu'il soit trop petit sur petits écrans */
+    max-width: 100%; /* Assure qu'il ne dépasse pas la div */
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: block; /* Place correctement sous le label */
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #ccc;
+    box-sizing: border-box;
+    font-size: 1rem;
+    resize: vertical; /* Permet de redimensionner en hauteur pour le textarea */
+}
+
+/* Adapter le bouton submit */
+input[type="submit"] {
+    display: block;  /* Pour que la marge auto fonctionne */
+    margin: 30px auto; /* Centrage horizontal */
+    width: 20%;
+    min-width: 150px;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 6px;
+    background-color: #f6f6f6;
+    color: #121212;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Effet au survol */
+input[type="submit"]:hover {
+    background-color: #000000;
+    color: #f6f6f6;
+    border: 1px solid #f6f6f6;
+    transform: scale(1.2);
+    transition: color .3s, transform 0.3s ease;
+}
+
+input[type="submit"] {
+    color: #121212;
+    background-color: #f6f6f6;
+    font-weight: 600;
+}
+
