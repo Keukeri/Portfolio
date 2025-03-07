@@ -103,8 +103,9 @@ html{
     text-align: center;
     padding:50px 0;
     color:#f0f9ff;
-    background-color:#e40f0f ;
+    background-color:#141414 ;
     margin-top: 10vh;
+    border-top: solid 0.2px #919191;
   }
   .footerr div {
     display: flex;
@@ -118,6 +119,7 @@ html{
     font-size:25px;
   }
   .footerr a {
+    margin-top: 10px;
     color:inherit;
     text-decoration:none;
     opacity:0.6;
@@ -131,5 +133,20 @@ html{
     padding-top:24px;
     opacity:0.3;
     font-size:15px;
-    margin-bottom:0;
   }
+.footerr img{
+  width: 50px;
+  height: 50px;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 2rem;
+  color: #f6f6f6;
+}
+
+.btn:hover {
+  transform: scale(1.2);
+  transition: color .3s, transform 0.3s ease;
+}
