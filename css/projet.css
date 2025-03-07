@@ -137,7 +137,7 @@
     flex-direction: column;
     text-align: center;
     padding: 30px;
-  margin: auto;
+    margin: auto;
     gap: 20px; /* Ajoute un espacement entre les liens */
 }
 
@@ -187,7 +187,7 @@
 }
 
 .image-container1 img {
-    max-width: 50%;
+    max-width: 60%;
     height: auto;
     border-radius: 25px;
     margin-left: 50px; /* Espacement entre texte et image */
@@ -200,4 +200,22 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding-left: 50px ;
+    margin: 20px auto;
+    font-size: 1rem;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+}
+.title {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    font-size: 1.5rem;
 }
