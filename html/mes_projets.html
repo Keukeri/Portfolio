@@ -32,8 +32,7 @@
         <section class="listpro">
             <div class="Decmescrea">
                 <a href="#p1" class="btn2">En chute libre</a>
-                <a href="#p2" class="btn2">projet 2</a>
-                <a href="#p3" class="btn2">projet 3</a>
+                <a href="#p2" class="btn2">Mes créations graphiques</a>
             </div>
         </section>
 
@@ -48,7 +47,7 @@
                 <!-- Conteneur pour le texte (à gauche) et l'image (à droite) -->
                 <div class="contenu">
                     <div class="text_ap2">
-                        <h2>Un site web mais pourquoi ?</h2> 
+                        <div data-aos="fade-right"><h2>Un site web mais pourquoi ?</h2></div>
                         <p>
                             
 
@@ -59,45 +58,44 @@
                             - L’application des bonnes pratiques en matière de design et de structuration du contenu <br>
                             Ce projet nous a permis d’approfondir nos compétences techniques tout en travaillant en équipe sur un projet concret, du concept initial à la mise en ligne du site.
                         </p>
-                        <br>
-                        <h2>Un site web mais sur quoi ?</h2> 
+                        <div data-aos="fade-right"><h2>Un site web mais sur quoi ?</h2></div>
                         <p>Ayant pour contrainte de sélectionner trois lieux géographiques liés entre eux, 
                             et étant tous les trois passionnés de randonnée, nous avons trouvé qu’un site dédié 
                             aux cascades de notre région serait une excellente idée. 
                             Enthousiastes, nous nous sommes donc mis au travail pour donner vie à ce projet…</p>
                     </div>
                     
-                    <div class="image-container1">
+                    <div class="image-container1"  data-aos="flip-left">
                         <img src="../Image/screen_enchu.png" alt="screen">
                     </div>
                 </div>
                 <div class="container">
-                    <div class="column">
+                    <div class="column" data-aos="zoom-in" >
                         <div class="title">Catégories</div>
                         <div>Développement web</div>
                         <div>Gestion de projet</div>
                     </div>
-                    <div class="column">
+                    <div class="column" data-aos="zoom-in" >
                         <div class="title">Livrables</div>
                         <div>Site web </div>
                         <div>Outils de gestion de projet</div>
                     </div>
-                    <div class="column">
+                    <div class="column" data-aos="zoom-in" >
                         <div class="title">Dates</div>
                         <div>2024</div>
                     </div>
-                    <div class="column">
+                    <div class="column" data-aos="zoom-in" >
                         <div class="title">Crédits</div>
-                        <div>Kelian MARCHAND BEYNEY (moi)</div>
                         <div>Yeshua SUEDOIS</div>
                         <div>Roudley SOUFFRANT</div>
+                        <div>Kelian MARCHAND BEYNEY (moi)</div>
                     </div>
                 </div>
                 <!-- Section en bas avec le lien -->
                 <div class="t2">
                     <h2>En chute libre</h2>
                     <div class="lien">
-                        <a href="https://keukeri.github.io/En-chute-libre/">
+                        <a href="https://keukeri.github.io/En-chute-libre/" target="_blank">
                             Se rendre sur le site <img src="../Image/fleche.png" alt="fleche">
                         </a>
                     </div>
@@ -109,21 +107,28 @@
 
         <div id="p2">
             <section class="premier_pro" data-aos="zoom-in-left" >
-                <div class="projet1">
-                    <h1><span class="auto-typing"></span></h1>
-                    <h2>TRAVAUX </h2>
+                     <div class="titre">
+                        <h1><span class="auto-typing2"></span></h1>
+                    </div>
+                <div class="car">
+                <section class="carouselle">
+                    <input type="radio" name="position" />
+                    <input type="radio" name="position" />
+                    <input type="radio" name="position" checked />
+                    <input type="radio" name="position" />
+                    <input type="radio" name="position" />
+                    <main id="carousel">
+                      <div class="item"></div>
+                      <div class="item"></div>
+                      <div class="item"></div>
+                      <div class="item"></div>
+                      <div class="item"></div>
+                      <main>
+                  </section>
                 </div>
             </section>
         </div>
 
-        <div id="p3">
-            <section class="premier_pro" data-aos="zoom-in-left" >
-                <div class="projet1">
-                    <h1><span class="auto-typing"></span></h1>
-                    <h2>TRAVAUX </h2>
-                </div>
-            </section>
-        </div>
 
         <footer class="footerr">
             <div >
@@ -148,6 +153,10 @@
                 strings: ['Mon premier site web :'],
                 typeSpeed: 100,
             })
+            let typed2 = new Typed('.auto-typing2', {
+            strings: ['Quelques créations graphique :'],
+            typeSpeed: 100,
+        })
     
         </script>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

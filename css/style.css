@@ -76,7 +76,7 @@
     justify-content: center; /* Centre verticalement */
     width: 80%;
     min-height: 80vh; /* Section prend toute la hauteur de l'écran */
-    background-color: #121212a9; /* Couleur de fond */
+    background-color: #2b2b2ba9; /* Couleur de fond */
     border-radius: 3%; /* Coins arrondis */
     color: #f6f6f6; /* Couleur du texte */
     margin: 0 auto; /* Centre horizontalement la section elle-même */
@@ -166,7 +166,7 @@
     display: flex;
     width: 80%;
     min-height: 80vh;
-    background-color: #121212a9;
+    background-color: #2b2b2ba9;
     border-radius: 3%;
     color: #f6f6f6;
     margin: 0 auto;
@@ -226,7 +226,7 @@
 .formulaire{
     width: 70%;
     height: 80vh; 
-    background-color: #121212a9; /* Couleur de fond */
+    background-color: #2b2b2ba9; /* Couleur de fond */
     border-radius: 3%; /* Coins arrondis */
     color: #f6f6f6; /* Couleur du texte */
     margin: 0 auto; /* Centre horizontalement la section elle-même */

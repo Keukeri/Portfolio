@@ -49,18 +49,20 @@
                  <p> Étudiant en BUT Métiers du Multimédia et de l'Internet (MMI). <br>
                 Je suis passionné par l'univers du numérique, le cinema et bien d'autres choses encore... <br>
                 Tu peux me contacter ou consulter mon cv  juste en dessous ;)</p>
-                <a href="#part_contact">Me contacter</a> <a href="Image/CV.pdf" class="cv">Mon CV</a>
+                <a href="#part_contact">Me contacter</a> <a href="Image/CV.pdf" target="_blank" class="cv">Mon CV</a>
             </div>
         </section>
      </section>
     </div>
     <div class="Decmescrea">
-        <a href="#part2" class="btn">Découvrir mes créations ?</a>
+        <a href="#part2" class="btn">Découvrir mes projets ?</a>
     </div>
     <div id="part2">
         <section class="mes_créations" data-aos="zoom-in-left">
             <div class="text_ap2">
-                <h1><span class="auto-typing2"></span></h1> 
+            
+
+            <div data-aos="fade-right"><h1><span class="auto-typing2"></span></h1> </div>
                 <p>
                     Graphiste et développeur web passionné, je conçois des affiches et des designs
                     percutants tout en créant des sites web modernes et interactifs. Chaque projet est une fusion entre esthétique et
@@ -82,7 +84,7 @@
             <section class="text_contact" >
                 <h1><span class="auto-typing3"></span></h1>
                     <div >
-                        <form action="/action_page.php" class="ok">
+                        <form action="form.php" class="ok" method="post">
                           <label for="fname">Votre prénom:</label>
                           <input type="text" id="fname" name="firstname" placeholder="Votre prénom..">
 
@@ -92,7 +94,7 @@
                           <label for="mail">Votre email:</label>
                           <input type="email" id="mail" name="email" placeholder="Votre mail..">
 
-                          <label for="Msg">Votre message:</label>
+                          <label for="msg">Votre message:</label>
                           <textarea name="message" id="msg" placeholder="Votre message..."></textarea>
                           <input type="submit" value="Envoyer">
                         </form>
@@ -109,9 +111,9 @@
             <h3><a href="#part_contact">Contact</a></h3>
         </div>
         <div class="resaux">
-            <a href="linkedin.com/in/kelian-marchand-beyney-76294b334"><img src="Image/link.png" alt="linkedin"></a>
+            <a href="linkedin.com/in/kelian-marchand-beyney-76294b334" target="_blank"><img src="Image/link.png" alt="linkedin"></a>
             <a href="mailto:kelian.marchand@yahoo.com"><img src="Image/mail.png" alt=""></a>
-            <a href="https://github.com/Keukeri"><img src="Image/github.png" alt=""></a>
+            <a href="https://github.com/Keukeri" target="_blank"><img src="Image/github.png" alt=""></a>
         </div>
             <p class="copyright">Mon portfolio © 2025</p>
         </footer>
@@ -130,7 +132,7 @@
         })
 
         let typed2 = new Typed('.auto-typing2', {
-            strings: ['Mes créations :'],
+            strings: ['Mes projets :'],
             typeSpeed: 100,
         })
 
