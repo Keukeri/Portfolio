@@ -304,3 +304,13 @@ input[type="submit"] {
     font-weight: 600;
 }
 
+/* Responsive input form */
+@media screen and (max-width: 768px) {
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        font-size: 1rem;
+        padding: 10px;
+        width: 100%;
+    }
+}

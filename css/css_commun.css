@@ -149,3 +149,15 @@ html{
   transform: scale(1.2);
   transition: color .3s, transform 0.3s ease;
 }
+/* Responsive footer */
+@media screen and (max-width: 768px) {
+  .footerr div {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .footerr img {
+      width: 30px;
+      height: 30px;
+  }
+}
