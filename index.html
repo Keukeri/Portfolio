@@ -10,17 +10,21 @@
 
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="index.html" id="logoacceuil"><img src="Image/logo.png" alt="logo_ke"  class="logo"></a>
-            <ul>
-                <li><a href="index.html">Acceuil</a></li>
-                <li><a href="#part1">A propos</a></li>
-                <li><a href="html/mes_projets.html">Mes projets</a></li>
-                <li><a href="#part_contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+   <header>
+    <nav>
+        <a href="index.html" id="logoacceuil">
+            <img src="Image/logo.png" alt="logo_ke" class="logo">
+        </a>
+        <button id="menu-toggle" aria-label="Menu">&#9776;</button> <!-- ☰ -->
+        <ul id="menu">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="#part1">À propos</a></li>
+            <li><a href="html/mes_projets.html">Mes projets</a></li>
+            <li><a href="#part_contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
     <div class="bienvenue"> 
         <p>
             <span>
@@ -59,8 +63,6 @@
     <div id="part2">
         <section class="mes_créations" data-aos="zoom-in-left">
             <div class="text_ap2">
-            
-
             <div data-aos="fade-right"><h1><span class="auto-typing2"></span></h1> </div>
                 <p>
                     Graphiste et développeur web passionné, je conçois des affiches et des designs
@@ -78,29 +80,33 @@
             
         </section>
     </div>
-    <div id="part_contact">
-        <section class="formulaire" data-aos="zoom-in-left" >
-            <section class="text_contact" >
-                <h1><span class="auto-typing3"></span></h1>
-                    <div >
-                        <form action="form.php" class="ok" method="post">
-                          <label for="fname">Votre prénom:</label>
-                          <input type="text" id="fname" name="firstname" placeholder="Votre prénom..">
-
-                          <label for="lname">Votre nom:</label>
-                          <input type="text" id="lname" name="lastname" placeholder="Votre nom..">
-
-                          <label for="mail">Votre email:</label>
-                          <input type="email" id="mail" name="email" placeholder="Votre mail..">
-
-                          <label for="msg">Votre message:</label>
-                          <textarea name="message" id="msg" placeholder="Votre message..."></textarea>
-                          <input type="submit" value="Envoyer">
-                        </form>
-                      </div>
-            </section>
-         </section>
+   <div id="part_contact">
+    <section class="formulaire" data-aos="zoom-in-left">
+        <div class="form-header" data-aos="fade-right">
+            <h1><span class="auto-typing3">Contactez-moi</span></h1>
         </div>
+        <form action="https://formspree.io/f/xeogzbvw" method="POST" class="form-body">
+            <div class="form-group">
+                <label for="prenom">Votre prénom</label>
+                <input type="text" name="prenom" id="prenom" required placeholder="Votre prénom">
+            </div>
+            <div class="form-group">
+                <label for="nom">Votre nom</label>
+                <input type="text" name="nom" id="nom" required placeholder="Votre nom">
+            </div>
+            <div class="form-group">
+                <label for="email">Votre email</label>
+                <input type="email" name="email" id="email" required placeholder="Votre email">
+            </div>
+            <div class="form-group">
+                <label for="message">Votre message</label>
+                <textarea name="message" id="message" rows="5" required  placeholder="Votre message..."></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Envoyer</button>
+        </form>
+    </section>
+</div>
+
 
         <footer class="footerr">
         <div >
@@ -115,6 +121,8 @@
             <a href="https://github.com/Keukeri" target="_blank"><img src="Image/github.png" alt="github"></a>
         </div>
             <p class="copyright">Mon portfolio © 2025</p>
+            <div class="mention"><a href="html/Mentions_legales.html">Mentions légales</a></div>
+            
         </footer>
     <section class="overlay"></section>
     
@@ -146,5 +154,14 @@
     <script>
         AOS.init();
       </script>
+      <script>
+    const toggleBtn = document.getElementById('menu-toggle');
+    const menu = document.getElementById('menu');
+
+    toggleBtn.addEventListener('click', () => {
+        menu.classList.toggle('active');
+    });
+</script>
+
 </body>
 </html>
